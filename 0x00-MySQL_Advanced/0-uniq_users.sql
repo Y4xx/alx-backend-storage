@@ -1,6 +1,8 @@
-create tabel users 
-(
-    id int,
-    name varchar(255),
-    email varchar(255)
-);
+
+-- creating sql table users
+-- attr id, email,name, country
+CREATE TABLE IF NOT EXISTS users (
+	id int NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	email varchar(255) NOT NULL UNIQUE,
+	name varchar(255)
+	)
